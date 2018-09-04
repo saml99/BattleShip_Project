@@ -13,7 +13,7 @@ using Microsoft.VisualBasic;
 using SwinGameSDK;
 
 /// <summary>
-
+///change
 /// ''' The DeploymentController controls the players actions
 
 /// ''' during the deployment phase.
