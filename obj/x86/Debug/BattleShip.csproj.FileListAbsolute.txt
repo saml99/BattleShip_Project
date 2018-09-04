@@ -1,0 +1,2 @@
+C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\BattleShip.csprojAssemblyReference.cache
+C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\BattleShip.csproj.CoreCompileInputs.cache

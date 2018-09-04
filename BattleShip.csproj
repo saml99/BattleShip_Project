@@ -1,0 +1,271 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{45F8D75F-D286-417B-AD33-AB82DC647C11}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BattleShip</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SwinGame, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ObjectOrientedProgramming\lab04\ShapeDrawing\lib\SwinGame.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="contributors.txt" />
+    <Content Include="lib\SwinGame.dll" />
+    <Content Include="lib\SwinGame.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\win\jpeg.dll" />
+    <Content Include="lib\win\libfreetype-6.dll" />
+    <Content Include="lib\win\libogg-0.dll" />
+    <Content Include="lib\win\libpng12-0.dll" />
+    <Content Include="lib\win\libpng13.dll" />
+    <Content Include="lib\win\libtiff-3.dll" />
+    <Content Include="lib\win\libvorbis-0.dll" />
+    <Content Include="lib\win\libvorbisfile-3.dll" />
+    <Content Include="lib\win\mikmod.dll" />
+    <Content Include="lib\win\ogg.dll" />
+    <Content Include="lib\win\SDL.dll" />
+    <Content Include="lib\win\SDL_gfx.dll" />
+    <Content Include="lib\win\SDL_image.dll" />
+    <Content Include="lib\win\SDL_mixer.dll" />
+    <Content Include="lib\win\SDL_net.dll" />
+    <Content Include="lib\win\SDL_ttf.dll" />
+    <Content Include="lib\win\SGSDK.dll" />
+    <Content Include="lib\win\smpeg.dll" />
+    <Content Include="lib\win\swingame.rc" />
+    <Content Include="lib\win\zlib1.dll" />
+    <Content Include="Resources\animations\splash.txt" />
+    <Content Include="Resources\animations\startup.txt" />
+    <Content Include="Resources\bundles\FileDialog.txt" />
+    <Content Include="Resources\bundles\splash.txt" />
+    <Content Include="Resources\highscores.txt" />
+    <Content Include="Resources\images\deploy.jpg" />
+    <Content Include="Resources\images\deploy_button_hl.png" />
+    <Content Include="Resources\images\deploy_dir_button_horiz.png" />
+    <Content Include="Resources\images\deploy_dir_button_vert.png" />
+    <Content Include="Resources\images\deploy_play_button.png" />
+    <Content Include="Resources\images\deploy_randomize_button.png" />
+    <Content Include="Resources\images\discover.jpg" />
+    <Content Include="Resources\images\explosion.png" />
+    <Content Include="Resources\images\fdFile.png" />
+    <Content Include="Resources\images\fdFolder.png" />
+    <Content Include="Resources\images\FileDialog_Active.png" />
+    <Content Include="Resources\images\FileDialog_Background.png" />
+    <Content Include="Resources\images\FileDialog_Inactive.png" />
+    <Content Include="Resources\images\FileDialog_Scroll.png" />
+    <Content Include="Resources\images\FileDialog_ScrollSmall.png" />
+    <Content Include="Resources\images\loader_empty.png" />
+    <Content Include="Resources\images\loader_full.png" />
+    <Content Include="Resources\images\main_page.jpg" />
+    <Content Include="Resources\images\ship_deploy_horiz_1.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_2.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_3.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_4.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_5.png" />
+    <Content Include="Resources\images\ship_deploy_vert_1.png" />
+    <Content Include="Resources\images\ship_deploy_vert_2.png" />
+    <Content Include="Resources\images\ship_deploy_vert_3.png" />
+    <Content Include="Resources\images\ship_deploy_vert_4.png" />
+    <Content Include="Resources\images\ship_deploy_vert_5.png" />
+    <Content Include="Resources\images\splash.png" />
+    <Content Include="Resources\images\SplashBack.png" />
+    <Content Include="Resources\images\Swinburne.jpg" />
+    <Content Include="Resources\images\SwinGameAni.jpg" />
+    <Content Include="Resources\images\SwinGameAni.png" />
+    <Content Include="Resources\panels\FileDialog.txt" />
+    <Content Include="Resources\sounds\error.wav" />
+    <Content Include="Resources\sounds\hit.wav" />
+    <Content Include="Resources\sounds\horrordrone.mp3" />
+    <Content Include="Resources\sounds\lose.wav" />
+    <Content Include="Resources\sounds\sink.wav" />
+    <Content Include="Resources\sounds\SwinGameStart.wav" />
+    <Content Include="Resources\sounds\watershot.wav" />
+    <Content Include="Resources\sounds\winner.wav" />
+    <Content Include="Resources\SwinGame.ico" />
+    <Content Include="src\DeploymentController.vb" />
+    <Content Include="src\DiscoveryController.vb" />
+    <Content Include="src\EndingGameController.vb" />
+    <Content Include="src\GameController.vb" />
+    <Content Include="src\GameLogic.vb" />
+    <Content Include="src\GameResources.vb" />
+    <Content Include="src\GameState.vb" />
+    <Content Include="src\HighScoreController.vb" />
+    <Content Include="src\MenuController.vb" />
+    <Content Include="src\Model\AIHardPlayer.vb" />
+    <Content Include="src\Model\AIMediumPlayer.vb" />
+    <Content Include="src\Model\AIOption.vb" />
+    <Content Include="src\Model\AIPlayer.vb" />
+    <Content Include="src\Model\AttackResult.vb" />
+    <Content Include="src\Model\BattleShipsGame.vb" />
+    <Content Include="src\Model\Direction.vb" />
+    <Content Include="src\Model\ISeaGrid.vb" />
+    <Content Include="src\Model\Player.vb" />
+    <Content Include="src\Model\ResultOfAttack.vb" />
+    <Content Include="src\Model\SeaGrid.vb" />
+    <Content Include="src\Model\SeaGridAdapter.vb" />
+    <Content Include="src\Model\Ship.vb" />
+    <Content Include="src\Model\ShipName.vb" />
+    <Content Include="src\Model\Tile.vb" />
+    <Content Include="src\Model\TileView.vb" />
+    <Content Include="src\UtilityFunctions.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\feature1" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\08\fefd1b75f980c9aa3afa6d4c4242de957d3c7d" />
+    <None Include=".git\objects\0c\21a5137bb8355a28ae86f907c573888764cb3e" />
+    <None Include=".git\objects\14\8ba5d54f3fd695afdc9c9c03fde4eb9b5ea5f1" />
+    <None Include=".git\objects\18\2ed36dfd2ee05cf1141042520cdd05a9533ac8" />
+    <None Include=".git\objects\2e\c15396d61cdeaf761d65c3433b61543f94a63e" />
+    <None Include=".git\objects\2f\37f68a9523ffecc70bed20658850a5652a8b24" />
+    <None Include=".git\objects\36\128df4109b51c8163e54afb4878f1ca782b2e3" />
+    <None Include=".git\objects\3a\f5a388b7c041c1c585d5a4d3480be2c716abd7" />
+    <None Include=".git\objects\56\1801a9824249307e2df8855a64250523aa4259" />
+    <None Include=".git\objects\5e\ce6b886a1b6b5cef01d83a934b2a40c18849f1" />
+    <None Include=".git\objects\74\b4869cdfc574a46c4e083c4bf96d60d061d984" />
+    <None Include=".git\objects\84\3f6facbec3a687a1219f407a055e4c69e530d6" />
+    <None Include=".git\objects\85\c49f928878a342f971e0cb2d5d9f7d778f240a" />
+    <None Include=".git\objects\87\2a2a531e1e5780358135eed43fdccbd483df05" />
+    <None Include=".git\objects\a4\b74ed32df09124747cb52a52e3875a90c00147" />
+    <None Include=".git\objects\a7\a1fca40cccae02279d79438cc9f4b469980143" />
+    <None Include=".git\objects\b3\d3e92d2de6b715191a9230110e7e2eb5d6dbd6" />
+    <None Include=".git\objects\bb\75a5678797383f638053a70e8cea4833fae55f" />
+    <None Include=".git\objects\bc\d428be844532ab7fac7746f13f0feb0fccc3cc" />
+    <None Include=".git\objects\bf\269ca68f0fa4714b8673d5b58610698b6e46f8" />
+    <None Include=".git\objects\bf\3eec30d1970e143f278d3f8cc63d4b724bf661" />
+    <None Include=".git\objects\c0\8bd75e898fc4346c9380a6f4075e57085f7c48" />
+    <None Include=".git\objects\cd\8ef37358c17f005deab21f74a185f4fc2dd4d5" />
+    <None Include=".git\objects\cf\f9054aaf44e00f37596a26e303f9cd88425d36" />
+    <None Include=".git\objects\d5\54d821764f08602ece87fbfdbcfb40c7055f32" />
+    <None Include=".git\objects\db\a07972c0136c1d014e35338a6b89475482c957" />
+    <None Include=".git\objects\db\acbd81dee4c0da26223c98e6c469a8b47fba77" />
+    <None Include=".git\objects\ed\b0d2d58eab5cb2166ef1d23785fdd83ff42125" />
+    <None Include=".git\objects\f2\f7b3bb96d705c683d9738b1e38b40f6c1869ea" />
+    <None Include=".git\objects\fc\7b0e339022a29d26becb4065c7ccde873fade2" />
+    <None Include=".git\objects\pack\pack-38b55222afcda51a765791fdf14ca2effd5c6bcc.idx" />
+    <None Include=".git\objects\pack\pack-38b55222afcda51a765791fdf14ca2effd5c6bcc.pack" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\feature1" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\BattleShip_Project\v15\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="build.sh" />
+    <None Include="clean.sh" />
+    <None Include="lib\cygpath" />
+    <None Include="lib\godly\libSGSDK.dylib" />
+    <None Include="lib\mac\libSGSDK.dylib" />
+    <None Include="lib\sdl13\libSGSDK.dylib" />
+    <None Include="out.log" />
+    <None Include="README.md" />
+    <None Include="Resources\fonts\arial.ttf" />
+    <None Include="Resources\fonts\cour.ttf" />
+    <None Include="Resources\fonts\ffaccess.ttf" />
+    <None Include="Resources\fonts\maven_pro_regular.ttf" />
+    <None Include="Resources\sounds\SwinGameStart.ogg" />
+    <None Include="Resources\SwinGame.icns" />
+    <None Include="run.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="srcC#\DeploymentController.cs" />
+    <Compile Include="srcC#\DiscoveryController.cs" />
+    <Compile Include="srcC#\EndingGameController.cs" />
+    <Compile Include="srcC#\GameController.cs" />
+    <Compile Include="srcC#\GameLogic.cs" />
+    <Compile Include="srcC#\GameResources.cs" />
+    <Compile Include="srcC#\GameState.cs" />
+    <Compile Include="srcC#\HighScoreController.cs" />
+    <Compile Include="srcC#\MenuController.cs" />
+    <Compile Include="srcC#\Model\AIHardPlayer.cs" />
+    <Compile Include="srcC#\Model\AIMediumPlayer.cs" />
+    <Compile Include="srcC#\Model\AIOption.cs" />
+    <Compile Include="srcC#\Model\AIPlayer.cs" />
+    <Compile Include="srcC#\Model\AttackResult.cs" />
+    <Compile Include="srcC#\Model\BattleShipsGame.cs" />
+    <Compile Include="srcC#\Model\Directions.cs" />
+    <Compile Include="srcC#\Model\ISeaGrid.cs" />
+    <Compile Include="srcC#\Model\Player.cs" />
+    <Compile Include="srcC#\Model\ResultOfAttack.cs" />
+    <Compile Include="srcC#\Model\SeaGrid.cs" />
+    <Compile Include="srcC#\Model\SeaGridAdapter.cs" />
+    <Compile Include="srcC#\Model\Ship.cs" />
+    <Compile Include="srcC#\Model\ShipName.cs" />
+    <Compile Include="srcC#\Model\Tile.cs" />
+    <Compile Include="srcC#\Model\TileView.cs" />
+    <Compile Include="srcC#\UtilityFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\BattleShip\v15\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
