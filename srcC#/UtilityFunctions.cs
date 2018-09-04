@@ -14,6 +14,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
+using SwinGameSDK;
 
 static class UtilityFunctions
 {
@@ -140,13 +141,13 @@ static class UtilityFunctions
 
                 switch (grid.Item(row, col))
                 {
-                    case object _ when TileView.Ship:
+                    case TileView.Ship:
                         {
                             draw = false;
                             break;
                         }
 
-                    case object _ when TileView.Miss:
+                    case TileView.Miss:
                         {
                             if (small)
                                 fillColor = SMALL_MISS;
@@ -155,7 +156,7 @@ static class UtilityFunctions
                             break;
                         }
 
-                    case object _ when TileView.Hit:
+                    case TileView.Hit:
                         {
                             if (small)
                                 fillColor = SMALL_HIT;
@@ -164,8 +165,7 @@ static class UtilityFunctions
                             break;
                         }
 
-                    case object _ when TileView.Sea:
-                    case object _ when TileView.Ship:
+                    case TileView.Sea:
                         {
                             if (small)
                                 fillColor = SMALL_SEA;
@@ -272,7 +272,7 @@ static class UtilityFunctions
                     break;
                 }
 
-            case object _ when GameState.Deploying:
+            case GameState.Deploying:
                 {
                     SwinGame.DrawBitmap(GameImage("Deploy"), 0, 0);
                     break;

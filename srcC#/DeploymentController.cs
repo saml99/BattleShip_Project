@@ -13,7 +13,7 @@ using Microsoft.VisualBasic;
 using SwinGameSDK;
 
 /// <summary>
-///change
+
 /// ''' The DeploymentController controls the players actions
 
 /// ''' during the deployment phase.
@@ -58,12 +58,12 @@ static class DeploymentController
         if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE))
             AddNewState(GameState.ViewingGameMenu);
 
-        if (SwinGame.KeyTyped(KeyCode.VK_UP) | SwinGame.KeyTyped(KeyCode.VK_DOWN))
+        if (SwinGame.KeyTyped(KeyCode.vk_UP) | SwinGame.KeyTyped(KeyCode.VK_DOWN))
             _currentDirection = Direction.UpDown;
-        if (SwinGame.KeyTyped(KeyCode.VK_LEFT) | SwinGame.KeyTyped(KeyCode.VK_RIGHT))
+        if (SwinGame.KeyTyped(KeyCode.vk_LEFT) | SwinGame.KeyTyped(KeyCode.VK_RIGHT))
             _currentDirection = Direction.LeftRight;
 
-        if (SwinGame.KeyTyped(KeyCode.VK_R))
+        if (SwinGame.KeyTyped(KeyCode.vk_R))
             HumanPlayer.RandomizeDeployment();
 
         if (SwinGame.MouseClicked(MouseButton.LeftButton))
@@ -103,7 +103,7 @@ static class DeploymentController
         // Calculate the row/col clicked
         int row, col;
         row = Convert.ToInt32(Math.Floor((mouse.Y) / (double)(CELL_HEIGHT + CELL_GAP)));
-        col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (double)(CELL_WIDTH + CELL_GAP)));
+        col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (double)(CELL_WIDTH + CELL_GAP))); 
 
         if (row >= 0 & row < HumanPlayer.PlayerGrid.Height)
         {

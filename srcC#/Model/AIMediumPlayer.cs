@@ -65,7 +65,6 @@ public class AIMediumPlayer : AIPlayer
                 default:
                     {
                         throw new ApplicationException("AI has gone in an imvalid state");
-                        break;
                     }
             }
         }

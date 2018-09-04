@@ -6,6 +6,9 @@
 // '' grid. This can be used in conjuncture with the SeaGridAdapter to 
 // '' mask the position of the ships.
 // '' </remarks>
+using System;
+using System.Collections.Generic;
+
 public class SeaGrid : ISeaGrid {
     
     private const int _WIDTH = 10;
@@ -43,14 +46,31 @@ public class SeaGrid : ISeaGrid {
             return _ShipsKilled;
         }
     }
-    
+
+    public TileView Item => throw new NotImplementedException();
+
     public TileView this[int x, int y] {
     }
-}
-Endclass Unknown {
-}
 
-    
+    event EventHandler ISeaGrid.Changed
+    {
+        add
+        {
+            throw new NotImplementedException();
+        }
+
+        remove
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public AttackResult HitTile(int row, int col)
+    {
+        throw new NotImplementedException();
+    }
+}
+   
     // '' <summary>
     // '' AllDeployed checks if all the ships are deployed
     // '' </summary>
@@ -67,7 +87,7 @@ Endclass Unknown {
         }
     }
     
-    public DummyClass(Dictionary<ShipName, Ship> ships) {
+    public void DummyClass(Dictionary<ShipName, Ship> ships) {
         // fill array with empty Tiles
         int i;
         for (i = 0; (i 

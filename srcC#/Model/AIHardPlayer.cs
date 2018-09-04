@@ -151,7 +151,6 @@ public class AIHardPlayer : AIPlayer
                 default:
                     {
                         throw new ApplicationException("AI has gone in an invalid state");
-                        break;
                     }
             }
         }
@@ -218,7 +217,6 @@ public class AIHardPlayer : AIPlayer
             case object _ when ResultOfAttack.ShotAlready:
                 {
                     throw new ApplicationException("Error in AI");
-                    break;
                 }
         }
 
