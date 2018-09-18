@@ -1,2 +1,11 @@
 C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\BattleShip.csprojAssemblyReference.cache
 C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\BattleShip.csproj.CoreCompileInputs.cache
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\BattleShip.csprojAssemblyReference.cache
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\BattleShip.csproj.CoreCompileInputs.cache
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\bin\Debug\lib\SwinGame.dll.mdb
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\bin\Debug\ConsoleApplication.exe
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\bin\Debug\ConsoleApplication.pdb
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\bin\Debug\SwinGame.dll
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\BattleShip.csproj.CopyComplete
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\ConsoleApplication.pdb
