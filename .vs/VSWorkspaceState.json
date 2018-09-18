@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\srcC#"
+    "\\src",
+    "\\srcC#",
+    "\\srcC#\\Model"
   ],
   "SelectedNode": "\\BattleShip.sln",
   "PreviewInSolutionExplorer": false

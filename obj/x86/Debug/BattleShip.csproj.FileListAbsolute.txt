@@ -9,3 +9,5 @@ C:\Users\tyler\Documents\GitHub\BattleShip_Project\bin\Debug\SwinGame.dll
 C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\BattleShip.csproj.CopyComplete
 C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\ConsoleApplication.exe
 C:\Users\tyler\Documents\GitHub\BattleShip_Project\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\sam.lewis\Documents\DP1\BattleShip_Project\obj\x86\Debug\ConsoleApplication.pdb
